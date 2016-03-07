@@ -1,0 +1,31 @@
+{
+  "name": "lightbluebeandemo",
+  "version": "1.0.0",
+  "description": "LightBlue Bean demo, using node serialport",
+  "main": "TelegramBot.js",
+  "dependencies": {
+    "fb": "^1.0.2",
+    "node-telegram-bot-api": "^0.20.1",
+    "node-twitter-api": "^1.7.0",
+    "twitter": "^1.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurasec/LightBlueBeanDemo.git"
+  },
+  "keywords": [
+    "serialport",
+    "lightblue",
+    "bean"
+  ],
+  "author": "Jurasec <jurasec\u001bq@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jurasec/LightBlueBeanDemo/issues"
+  },
+  "homepage": "https://github.com/jurasec/LightBlueBeanDemo#readme"
+}
