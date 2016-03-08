@@ -12,6 +12,7 @@ Access token secret: BCgHiAFE7AxVV0qsI6JCBB9STp8mlGK8NERe6St4Hk6nZ
 
 
 var twitterAPI = require('node-twitter-api');
+var TelegramBot = require('./TelegramBot.js')
 
 var key = 'xGHSyWxEWrfEvGdSSMKvSrH6w';
 var  secret = 'dH7BaTKIq3M60x26G2L2f6eP2yyzezGuqhWzr9rCO9YSriRtLG';
@@ -44,6 +45,7 @@ client.get('statuses/user_timeline', params, function(error, tweets, response){
 client.stream('statuses/filter', {track: 'LBBDemo'}, function(stream) {
   stream.on('data', function(tweet) {
     console.log(tweet.text);
+    TelegramBot.sendMessageBroadcast();
   });
  
   stream.on('error', function(error) {

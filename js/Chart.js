@@ -5,7 +5,7 @@ function myYRangeFunction(range) {
   return {min: min, max: max};
 }
 
-var chart = new SmoothieChart({millisPerPixel:25,grid:{fillStyle:'#ffffff',strokeStyle:'rgba(233,233,233,0.24)',verticalSections:9},maxValue:750,minValue:200, yRangeFunction:myYRangeFunction}),
+var chart = new SmoothieChart({labels:{fillStyle:'#020107',disabled:false},millisPerPixel:25,grid:{fillStyle:'#ffffff',strokeStyle:'rgba(233,233,233,0.80)',verticalSections:9},maxValue:750,minValue:200, yRangeFunction:myYRangeFunction}),
     canvas = document.getElementById('smoothie-chart'),
     series = new TimeSeries();
 
