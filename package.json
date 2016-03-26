@@ -12,7 +12,10 @@
     "sleep": "^3.0.1",
     "twitter": "^1.2.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "connect": "^3.4.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

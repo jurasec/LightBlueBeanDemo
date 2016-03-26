@@ -1,0 +1,29 @@
+{
+  "name": "lightbluebeandemo",
+  "description": "LightBlue Bean demo, using node serialport",
+  "main": "WebServer.js",
+  "authors": [
+    "Jurasec <jurasec\u001bq@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "serialport",
+    "lightblue",
+    "bean"
+  ],
+  "homepage": "https://github.com/jurasec/LightBlueBeanDemo",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}

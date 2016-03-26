@@ -43,18 +43,27 @@
   }*/
 }
 
+.button-clicked {
+  opacity: .65;
+  transform: scale( 1 );
+  transition: all 100ms ease;
+  background: #ff7473;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
 *:focus{
   outline: none;
 }
 
 
-div .button:hover {
+/*div .button:hover {
     opacity: .9;
     transition: all 100ms ease;
     background: #2b90d9;
     border-color: #2b90d9;
     color: #FFFFFF;
-}
+}*/
 
 div .button:active {
     opacity: .65;
