@@ -1,4 +1,21 @@
 //var SerialPort = require("serialport").SerialPort
+app = require('express.io')();
+app.http().io();
+app.listen(7076);
+
+
+// Setup the ready route, and emit talk event.
+app.io.route('ready', function(req) {
+    console.log('socket.io ready...');
+    req.io.emit('talk', {
+        message: 'io event from an io route on the server'
+    })
+})
+
+// Send the client html.
+app.get('/', function(req, res) {
+    res.sendfile('../TimeSeriesChart.html')
+})
 
 var serialport = require("serialport");
 var SerialPort = serialport.SerialPort; // localize object constructor
