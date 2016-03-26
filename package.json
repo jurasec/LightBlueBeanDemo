@@ -4,10 +4,12 @@
   "description": "LightBlue Bean demo, using node serialport",
   "main": "TelegramBot.js",
   "dependencies": {
+    "express.io": "^1.1.13",
     "fb": "^1.0.2",
     "node-telegram-bot-api": "^0.20.1",
     "node-twitter-api": "^1.7.0",
     "serialport": "^2.0.6",
+    "sleep": "^3.0.1",
     "twitter": "^1.2.5"
   },
   "devDependencies": {},
