@@ -87,9 +87,9 @@ var i = 0;
 //}
 setInterval(function() {
   var value =  Math.random();
-  console.log('-> ', data[ i ][ 0 ]);
+  //console.log('-> ', data[ i ][ 0 ]);
   if( data[ i ][ 0 ] == 'S' ){
-  	console.log('value -> ', data[ i ].substring(1));
+  	//console.log('value -> ', data[ i ].substring(1));
   	//series.append(new Date().getTime(), value * 1000);
   	series.append( new Date().getTime(), data[ i ].substring(1) );
   }
